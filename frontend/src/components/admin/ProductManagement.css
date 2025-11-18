@@ -1,0 +1,99 @@
+.product-management {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-thumbnail {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.no-image {
+  color: #999;
+  font-size: 0.85rem;
+}
+
+.product-name-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.product-name-cell .sku {
+  font-size: 0.75rem;
+  color: #666;
+}
+
+.price-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.current-price {
+  font-weight: 600;
+  color: #4CAF50;
+}
+
+.original-price {
+  font-size: 0.85rem;
+  color: #999;
+  text-decoration: line-through;
+}
+
+.stock-in {
+  color: #4CAF50;
+  font-weight: 600;
+}
+
+.stock-out {
+  color: #f44336;
+  font-weight: 600;
+}
+
+.badge-active {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.badge-inactive {
+  background: #ffebee;
+  color: #c62828;
+}
+
+.badge-out_of_stock {
+  background: #fff3e0;
+  color: #e65100;
+}
+
+.product-modal {
+  max-width: 700px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.modal-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  resize: vertical;
+}
+
+/* Other styles inherited from UserManagement.css */
+@media (max-width: 768px) {
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+

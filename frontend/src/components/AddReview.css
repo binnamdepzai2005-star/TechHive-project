@@ -1,0 +1,148 @@
+.add-review-container {
+  margin: 2rem 0;
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.add-review-container h2 {
+  font-size: 1.8rem;
+  color: var(--text-primary);
+  margin-bottom: 1.5rem;
+}
+
+.add-review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-group label {
+  font-weight: 600;
+  color: var(--text-primary);
+  font-size: 1rem;
+}
+
+.form-group input[type="text"],
+.form-group select,
+.form-group textarea {
+  padding: 0.75rem 1rem;
+  border: 2px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: inherit;
+  transition: all 0.3s ease;
+}
+
+.form-group input[type="text"]:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-group input[type="range"] {
+  width: 100%;
+  height: 8px;
+  border-radius: 5px;
+  background: linear-gradient(
+    to right,
+    #ef4444 0%,
+    #f59e0b 25%,
+    #eab308 50%,
+    #84cc16 75%,
+    #10b981 100%
+  );
+  outline: none;
+  cursor: pointer;
+}
+
+.form-group input[type="range"]::-webkit-slider-thumb {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  border: 3px solid var(--primary-color);
+}
+
+.form-group input[type="range"]::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+  box-shadow: var(--shadow);
+  border: 3px solid var(--primary-color);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.form-group input:disabled,
+.form-group select:disabled,
+.form-group textarea:disabled {
+  background: var(--light-color);
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.login-required-message {
+  text-align: center;
+  padding: 2rem;
+}
+
+.login-required-message .alert {
+  padding: 2rem;
+  border-radius: 12px;
+}
+
+.login-required-message .alert-info {
+  background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+  border: 2px solid #2196f3;
+  color: #1565c0;
+}
+
+.login-required-message .alert-info p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.review-as-user {
+  padding: 0.75rem 1rem;
+  background: #e8f5e9;
+  border-radius: 8px;
+  color: #2e7d32;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.review-as-user strong {
+  color: #1b5e20;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .add-review-container {
+    padding: 1.5rem;
+  }
+  
+  .add-review-container h2 {
+    font-size: 1.5rem;
+  }
+}
+
