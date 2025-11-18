@@ -1,0 +1,16 @@
+# ============================================
+# RapidAPI Configuration for Real Reviews
+# ============================================
+# Copy this to your .env file
+
+# RapidAPI Key - Get from https://rapidapi.com/
+RAPIDAPI_KEY=your_rapidapi_key_here
+
+# RapidAPI Host for Amazon Reviews
+RAPIDAPI_HOST=real-time-amazon-data.p.rapidapi.com
+
+# Enable/Disable Real API Fetch
+# Set to 'true' to use real RapidAPI
+# Set to 'false' to use mock data (for testing)
+USE_REAL_API=false
+
